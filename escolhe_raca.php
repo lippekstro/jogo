@@ -8,8 +8,9 @@
 </head>
 
 <body>
+    
     <section>
-        <form action="">
+        <form action="escolhe_classe.php" method="POST">
             <button type="submit" name="raca" value="humano">
                 Humano
             </button>

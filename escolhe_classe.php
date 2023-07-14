@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if (isset($_POST['classe'])) {
+    $_SESSION['personagem']['raca'] = $_POST['raca'];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +17,11 @@
 
 <body>
     <section>
-        <form action="">
+        <p>RAÇA: <?= $_SESSION['personagem']['raca'] ?></p>
+    </section>
+
+    <section>
+        <form action="rolar_atributos.php" method="POST">
             <button type="submit" name="classe" value="guerreiro">
                 Guerreiro
             </button>
