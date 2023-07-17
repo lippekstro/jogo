@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (isset($_POST['classe'])) {
+if (isset($_POST['raca'])) {
     $_SESSION['personagem']['raca'] = $_POST['raca'];
 }
 ?>
